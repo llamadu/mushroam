@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "image": "/assets/images/poplar-bluff-wt.jpg",
+        "name": "Poplar Bluff",
+        "clicked": false
+    },
+    {
+        "id": 2,
+        "image": "/assets/images/artesia-wt.jpg",
+        "name": "Artesia",
+        "clicked": false
+    },
+    {
+        "id": 3,
+        "image": "/assets/images/britten-wt.jpg",
+        "name": "Britten",
+        "clicked": false
+    },
+    {
+        "id": 4,
+        "image": "/assets/images/city-wt.jpg",
+        "name": "New York City",
+        "clicked": false
+    },
+    {
+        "id": 5,
+        "image": "/assets/images/hollywood-wt.jpg",
+        "name": "Hollywood",
+        "clicked": false
+    },
+    {
+        "id": 6,
+        "image": "/assets/images/manistee-wt.jpg",
+        "name": "Manistee",
+        "clicked": false
+    },
+    {
+        "id": 7,
+        "image": "/assets/images/newyork-wt.jpg",
+        "name": "New York",
+        "clicked": false
+    },
+    {
+        "id": 8,
+        "image": "/assets/images/paramount-wt.jpg",
+        "name": "Paramount",
+        "clicked": false
+    },
+    {
+        "id": 9,
+        "image": "/assets/images/pumpkin-wt.jpg",
+        "name": "Pumpkin",
+        "clicked": false
+    },
+    {
+        "id": 10,
+        "image": "/assets/images/think-wt.jpg",
+        "name": "Think",
+        "clicked": false
+    },
+    {
+        "id": 11,
+        "image": "/assets/images/tulare-wt.jpg",
+        "name": "Tulare",
+        "clicked": false
+    },
+    {
+        "id": 12,
+        "image": "/assets/images/warnerbros-wt.jpg",
+        "name": "Warner Bros",
+        "clicked": false
+    }
+]

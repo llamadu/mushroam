@@ -1,39 +1,72 @@
-import React, { Component } from "react";
-import FriendCard from "./components/FriendCard";
-import Wrapper from "./components/Wrapper";
-import Title from "./components/Title";
-import friends from "./friends.json";
+import React, { Component } from 'react';
+import towers from './towers.json';
+import Scoreboard from './components/Scoreboard';
+import Jumbotron from './components/Jumbotron';
+import Container from './components/Container';
+import TowerCard from './components/TowerCard';
+
 
 class App extends Component {
-  // Setting this.state.friends to the friends json array
+  // Setting this.state.towers to the towers json array
   state = {
-    friends
+    towers,
+    message: "Click an image to begin!",
+    score: 0,
+    topScore: 0
   };
 
-  removeFriend = id => {
-    // Filter this.state.friends for friends with an id not equal to the id being removed
-    const friends = this.state.friends.filter(friend => friend.id !== id);
-    // Set this.state.friends equal to the new friends array
-    this.setState({ friends });
-  };
+  handleClickEvent = id => {
+    let newTowers = this.state.towers.sort(() => Math.random() - 0.5)
+    this.state.towers.filter(card => {
+      if (id === card.id) {
+        if (card.clicked === false) {
+          card.clicked = true;
+          this.setState({
+            score: this.state.score + 1,
+            message: "That was a great choice!"
+          });
+          if (this.state.score >= this.state.topScore) {
+            this.setState({ topScore: this.state.topScore + 1 })
+          }
 
-  // Map over this.state.friends and render a FriendCard component for each friend object
+        }
+        else {
+          this.newRound();
+        }
+      }
+      return newTowers;
+    });
+  }
+
+  newRound = () => {
+    if (this.state.score > this.state.topScore) {
+      this.setState({ topScore: this.state.score });
+    }
+    this.state.towers.forEach(tower => {
+      return tower.clicked = false;
+    });
+    this.setState({
+      message: "Uh oh, you already chose that one! Game restarted. Try Again!",
+      score: 0
+    });
+  }
+
   render() {
     return (
-      <Wrapper>
-        <Title>Friends List</Title>
-        {this.state.friends.map(friend => (
-          <FriendCard
-            removeFriend={this.removeFriend}
-            id={friend.id}
-            key={friend.id}
-            name={friend.name}
-            image={friend.image}
-            occupation={friend.occupation}
-            location={friend.location}
-          />
-        ))}
-      </Wrapper>
+      <div>
+        <Scoreboard score={this.state.score} topScore={this.state.topScore} />
+        <Jumbotron message={this.state.message} />
+        <Container>
+          {this.state.towers.map(tower => (
+            <TowerCard
+              handleClickEvent={this.handleClickEvent}
+              id={tower.id}
+              key={tower.id}
+              image={tower.image}
+            />
+          ))}
+        </Container>
+      </div>
     );
   }
 }
