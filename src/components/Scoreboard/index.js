@@ -8,7 +8,7 @@ const Scoreboard = props =>
 
       <ul className="navbar-nav mr-auto">
         <li className="nav-item">
-          <span>World of Water Towers</span>
+          <span>Mushroam</span>
         </li>
       </ul>
       <span className="score-card">
