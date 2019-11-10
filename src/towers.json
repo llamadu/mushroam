@@ -1,74 +1,74 @@
 [
     {
         "id": 1,
-        "image": "/assets/images/poplar-bluff-wt.jpg",
-        "name": "Poplar Bluff",
+        "image": "/assets/images/amanitamuscaria.jpg",
+        "name": "Amanita Muscaria",
         "clicked": false
     },
     {
         "id": 2,
-        "image": "/assets/images/artesia-wt.jpg",
-        "name": "Artesia",
+        "image": "/assets/images/boleteclover.jpg",
+        "name": "Bolet with Clover",
         "clicked": false
     },
     {
         "id": 3,
-        "image": "/assets/images/britten-wt.jpg",
-        "name": "Britten",
+        "image": "/assets/images/brownamanita.jpg",
+        "name": "Brown Amanita",
         "clicked": false
     },
     {
         "id": 4,
-        "image": "/assets/images/city-wt.jpg",
-        "name": "New York City",
+        "image": "/assets/images/ladybug.jpg",
+        "name": "Ladybug",
         "clicked": false
     },
     {
         "id": 5,
-        "image": "/assets/images/hollywood-wt.jpg",
-        "name": "Hollywood",
+        "image": "/assets/images/yard.jpg",
+        "name": "Yard",
         "clicked": false
     },
     {
         "id": 6,
-        "image": "/assets/images/manistee-wt.jpg",
-        "name": "Manistee",
+        "image": "/assets/images/lbm.jpg",
+        "name": "Little Brown Mushroom",
         "clicked": false
     },
     {
         "id": 7,
-        "image": "/assets/images/newyork-wt.jpg",
-        "name": "New York",
+        "image": "/assets/images/logfriend.jpg",
+        "name": "Log Friends",
         "clicked": false
     },
     {
         "id": 8,
-        "image": "/assets/images/paramount-wt.jpg",
-        "name": "Paramount",
+        "image": "/assets/images/lwm.jpg",
+        "name": "Little White Mushroom",
         "clicked": false
     },
     {
         "id": 9,
-        "image": "/assets/images/pumpkin-wt.jpg",
-        "name": "Pumpkin",
+        "image": "/assets/images/mushsalmoss.jpg.jpg",
+        "name": "Mushroom with Salal and Moss",
         "clicked": false
     },
     {
         "id": 10,
-        "image": "/assets/images/think-wt.jpg",
-        "name": "Think",
+        "image": "/assets/images/porcini.jpg",
+        "name": "Porcini",
         "clicked": false
     },
     {
         "id": 11,
-        "image": "/assets/images/tulare-wt.jpg",
-        "name": "Tulare",
+        "image": "/assets/images/shaggyegg.jpg",
+        "name": "Shaggy Egg",
         "clicked": false
     },
     {
         "id": 12,
-        "image": "/assets/images/warnerbros-wt.jpg",
-        "name": "Warner Bros",
+        "image": "/assets/images/shaggyveil.jpg",
+        "name": "Shaggy Veil",
         "clicked": false
     }
 ]
