@@ -1,23 +1,23 @@
 import React, { Component } from 'react';
-import towers from './towers.json';
+import mushrooms from './mushrooms.json';
 import Scoreboard from './components/Scoreboard';
 import Jumbotron from './components/Jumbotron';
 import Container from './components/Container';
-import TowerCard from './components/TowerCard';
+import MushroomCard from './components/MushroomCard';
 
 
 class App extends Component {
-  // Setting this.state.towers to the towers json array
+  // Setting this.state.mushroom to the mushrooms json array
   state = {
-    towers,
+    mushrooms,
     message: "Click an image to begin!",
     score: 0,
     topScore: 0
   };
 
   handleClickEvent = id => {
-    let newTowers = this.state.towers.sort(() => Math.random() - 0.5)
-    this.state.towers.filter(card => {
+    let newMushrooms = this.state.mushrooms.sort(() => Math.random() - 0.5)
+    this.state.mushrooms.filter(card => {
       if (id === card.id) {
         if (card.clicked === false) {
           card.clicked = true;
@@ -34,7 +34,7 @@ class App extends Component {
           this.newRound();
         }
       }
-      return newTowers;
+      return newMushrooms;
     });
   }
 
@@ -42,8 +42,8 @@ class App extends Component {
     if (this.state.score > this.state.topScore) {
       this.setState({ topScore: this.state.score });
     }
-    this.state.towers.forEach(tower => {
-      return tower.clicked = false;
+    this.state.mushrooms.forEach(mushroom => {
+      return mushroom.clicked = false;
     });
     this.setState({
       message: "Uh oh, you already chose that one! Game restarted. Try Again!",
@@ -57,12 +57,12 @@ class App extends Component {
         <Scoreboard score={this.state.score} topScore={this.state.topScore} />
         <Jumbotron message={this.state.message} />
         <Container>
-          {this.state.towers.map(tower => (
-            <TowerCard
+          {this.state.mushrooms.map(mushroom => (
+            <MushroomCard
               handleClickEvent={this.handleClickEvent}
-              id={tower.id}
-              key={tower.id}
-              image={tower.image}
+              id={mushroom.id}
+              key={mushroom.id}
+              image={mushroom.image}
             />
           ))}
         </Container>

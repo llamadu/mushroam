@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-const TowerCard = props =>
+const MushroomCard = props =>
   (
     <div className="card" onClick={() => props.handleClickEvent(props.id)}>
       <div className="img-container">
@@ -10,4 +10,4 @@ const TowerCard = props =>
     </div>
   );
 
-export default TowerCard;
+export default MushroomCard;
