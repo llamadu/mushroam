@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/mushroam/precache-manifest.f1132fbd4d060ce046871467b9c9f905.js"
+  "/mushroam/precache-manifest.81575703cec7d10292905c0a9ebf447b.js"
 );
 
 self.addEventListener('message', (event) => {
