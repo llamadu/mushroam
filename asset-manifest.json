@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/mushroam/static/css/main.7eedff02.chunk.css",
+    "main.js": "/mushroam/static/js/main.9774fc69.chunk.js",
+    "main.js.map": "/mushroam/static/js/main.9774fc69.chunk.js.map",
+    "runtime-main.js": "/mushroam/static/js/runtime-main.32afd418.js",
+    "runtime-main.js.map": "/mushroam/static/js/runtime-main.32afd418.js.map",
+    "static/js/2.d5d95f37.chunk.js": "/mushroam/static/js/2.d5d95f37.chunk.js",
+    "static/js/2.d5d95f37.chunk.js.map": "/mushroam/static/js/2.d5d95f37.chunk.js.map",
+    "index.html": "/mushroam/index.html",
+    "precache-manifest.f1132fbd4d060ce046871467b9c9f905.js": "/mushroam/precache-manifest.f1132fbd4d060ce046871467b9c9f905.js",
+    "service-worker.js": "/mushroam/service-worker.js",
+    "static/css/main.7eedff02.chunk.css.map": "/mushroam/static/css/main.7eedff02.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.32afd418.js",
+    "static/js/2.d5d95f37.chunk.js",
+    "static/css/main.7eedff02.chunk.css",
+    "static/js/main.9774fc69.chunk.js"
+  ]
+}
